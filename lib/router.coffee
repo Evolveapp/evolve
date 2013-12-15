@@ -32,3 +32,6 @@ requireLogin = ->
 Router.before requireLogin,
   only: "postSubmit"
 
+Router.before ->
+  clearErrors()
+
